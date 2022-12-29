@@ -1,0 +1,518 @@
+/* ------------------------------------------------------------------- */
+/* Import Section
+---------------------------------------------------------------------- */
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Abhaya+Libre");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+/* ==========================================================================
+   Chat Page
+   ========================================================================== */
+.chat{
+  background: #f4f4f4;	
+  padding: 80px 0px 150px 0px;
+}
+.messages-box {
+ float: left;
+ width: 100%;
+ border: 1px solid #e4e4e4;
+}
+.no-pdd {
+ padding: 0px !important;
+}
+.messages-container {
+ float: left;
+ width: 100%;
+ background-color: #fff;
+ border: 1px solid #e4e4e4;
+}
+.message-header {
+ float: left;
+ width: 100%;
+ padding: 0px !important;
+}
+.message-title{
+ padding: 0px 20px;
+ border-bottom: 2px solid #f4f4f4;
+}
+.message-title h4{
+ font-family: 'Abhaya Libre', serif;
+ font-size: 20px;
+ color: #88898a;
+ font-weight: 700;
+}
+.search-area {
+ padding: 10px 20px 20px 20px;
+}
+.search-area .input-field {
+ background: #f4f4f4;
+ margin: 0;
+ border-radius: 4px;
+ overflow: hidden;
+ padding: 0 20px;
+ position: relative;
+}
+.search-area .input-field input {
+ font-family: 'Abhaya Libre', serif;
+ width: 80%; 
+ margin: 0;
+ border: 0;
+ background: #f4f4f4;
+ color: #848484 !important;
+ padding: 10px 0px;
+}
+.search-area .input-field i {
+ font-size: 18px;
+ color: #848484 !important;
+ float: right;
+ position: relative;
+ top: 10px;
+ cursor: pointer;
+}
+
+
+.messages-list {
+ float: left;
+ width: 100%;
+ padding: 0px !important;
+}
+.messages-list ul {
+ float: left;
+ width: 100%;
+ padding: 0px !important;
+ height: 700px !important;
+ overflow-y: scroll;	
+}
+.messages-list ul li.active {
+ background-color: #efefef;
+}
+.messages-list ul li {
+ float: left;
+ width: 100%;
+ padding: 10px 10px 10px 20px;
+ border-bottom: 2px solid #f4f4f4;
+ cursor: pointer;
+}
+.messages-list ul li:last-child {
+ border-bottom: none;
+}
+
+
+.user-message-details {
+ float: left;
+ position: relative;
+ width: 100%;
+ padding: 10px 4px; 
+}
+.user-message-img {
+ float: left;
+ width: 40px;
+ height: 40px;
+ position: relative;
+ top: 6px;
+}
+.user-message img {
+ width: 100%;
+}
+.user-online {
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+ -ms-border-radius: 100px;
+ -o-border-radius: 100px;
+ border-radius: 100px;
+ background-color: #0fc19e;
+ position: absolute;
+ top: -3px;
+ right: 0;
+ width: 6px;
+ height: 6px;
+}
+.user-message-info {
+ position: relative;
+ top: 20px;
+ float: left;
+ padding-left: 13px;
+}
+.user-message-info h4 {
+ font-family: 'Abhaya Libre', serif;	
+ color: #88898a;
+ font-size: 24px;
+ font-weight: 700;
+ line-height: 0;
+}
+.user-message-info p {
+ font-family: 'Abhaya Libre', serif;	
+ color: #848484;
+ font-size: 14px;
+ padding-bottom: 0px !important;
+ margin-bottom: 0px !important;
+}
+.user-message-info span {
+ font-family: 'Abhaya Libre', serif;
+ color: #aaa;
+ font-size: 13px;
+ line-height: 0;
+}
+.message-notification {
+ position: absolute;
+ top: 2px;
+ right: 0;
+ width: 25px;
+ height: 25px;
+ 
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+ -ms-border-radius: 100px;
+ -o-border-radius: 100px;
+ border-radius: 100px;
+ 
+ background-color: #0fc19e;
+ text-align: center;
+ line-height: 25px;
+ font-family: 'Abhaya Libre', serif;
+ font-size: 13px;
+ color: #fff;
+}
+
+
+.pd-right-none {
+ padding-right: 0;
+}
+.pd-left-none {
+ padding-left: 0;
+}
+.conversation-box {
+ float: left;
+ width: 100%;
+ background-color: #fff;
+ position: relative;
+ border: 1px solid #e4e4e4;
+}
+.conversation-header {
+ float: left;
+ width: 100%;
+ background-color: rgba(255,255,255,0.95);
+ padding: 10px 0px 5px 20px;
+ border-bottom: 1px solid #eaeaea;
+ z-index: 0;
+}
+
+
+.conversation-container {
+ float: left;
+ width: 100%;
+ height: 670px;
+ overflow-y: scroll;
+ padding: 20px 0px; 
+}
+.convo-box {
+ float: left;
+ width: 100%;
+ position: relative;
+ margin-bottom: 15.5px;
+}
+.convo-box.pull-right .convo-area {
+ padding-left: 0;
+ padding-right: 85px;
+}
+.convo-area {
+ float: left;
+ width: auto;
+ padding-left: 85px;
+}
+.convo-message {
+ float: left;
+ -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+ -ms-border-radius: 15px;
+ -o-border-radius: 15px;
+ border-radius: 15px;
+ width: 100%;
+}
+.convo-message > p {
+ float: right;
+ width: 60%;
+ background-color: #0fc19e;
+ font-family: 'Abhaya Libre', serif;	
+ color: #848484;
+ font-size: 15px;
+ line-height: 22px;
+ padding: 10px 35px 10px 35px;
+ color: #fff;
+ -webkit-border-radius: 15px;
+ -moz-border-radius: 15px;
+ -ms-border-radius: 15px;
+ -o-border-radius: 15px;
+ border-radius: 15px;
+}
+.convo-box.pull-right .convo-area > span {
+ float: right;
+ width: auto;
+}
+.convo-area > span {
+ color: #b2b2b2;
+ font-family: 'Abhaya Libre', serif;	
+ color: #aaa;
+ font-size: 13px;
+ float: left;
+ width: 100%;
+ margin-top: 1px;
+}
+.convo-box.pull-right .convo-img {
+ left: auto;
+ right: 20px;
+ bottom: 25px;
+}
+.convo-img {
+ position: absolute;
+ bottom: 25px;
+ left: 20px;
+ width: 50px;
+}
+
+.convo-area.convo-left .convo-message > p {
+ background-color: #f4f4f4;
+ color: #686868;
+ width: auto;
+ padding: 10px 15px;
+ float: left;
+}
+.convo-box.convo-left .convo-img {
+ bottom: 13px;
+}
+
+
+.type_messages {
+ border-top: 2px solid #f2f6f8;
+ display: block;
+ overflow: hidden;
+ margin-bottom: 0px;
+ padding: 8px 20px 5px 20px;
+}
+.type_messages .input-field {
+ position: relative;
+ margin: 0;
+}
+.type_messages .input-field textarea {
+ margin: 0;
+ outline: none;
+ resize: none;
+ border: 0;
+ box-shadow: none;
+ color: #beced7;
+ width: 80%;
+}
+.type_messages .input-field .imoji {
+ position: absolute;
+ top: 2px;
+ right: 0;
+}
+.type_messages .input-field .imoji li {
+ display: inline-block;
+ padding-left: 17px;
+}
+.type_messages .input-field .imoji li a {
+ font-size: 25px;
+ color: #0fc19e;
+}
+
+/* Right Convo */
+.main-message-box {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15.5px;
+}
+.message-dt {
+    float: left;
+    width: auto;
+    padding-left: 85px;
+}
+.message-inner-dt {
+    float: left;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+.message-inner-dt > p {
+    float: right;
+    width: 60%;
+    background-color: #e44d3a;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 35px 10px 35px;
+    color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+.message-dt > span {
+    color: #b2b2b2;
+    font-size: 14px;
+    float: left;
+    width: 100%;
+    margin-top: 7px;
+}
+.messg-usr-img {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    width: 50px;
+}
+.messg-usr-img img {
+    width: 100%;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border-radius: 100px;
+}
+.main-message-box.ta-right {
+    float: right;
+}
+.main-message-box.ta-right .message-dt {
+    padding-left: 0;
+    padding-right: 85px;
+}
+.main-message-box.ta-right .message-dt > span {
+    float: right;
+    width: auto;
+}
+.main-message-box.ta-right .messg-usr-img {
+    left: auto;
+    right: 20px;
+    bottom: 25px;
+}
+
+
+.message-send-area {
+    float: left;
+    width: 100%;
+    background-color: #f3f5f7;
+    padding: 25px 20px 15px 20px;
+    border: 1px solid #eeeeee;
+}
+.message-send-area form {
+    float: left;
+    width: 100%;
+}
+.mf-field {
+    float: left;
+    width: 100%;
+}
+.mf-field input {
+    float: left;
+    width: 80%;
+    background-color: #fff;
+    color: #b2b2b2;
+    font-size: 16px;
+    padding: 0 15px;
+    border: 1px solid #e6e6e6;
+    height: 45px;
+}
+.mf-field button {
+    float: left;
+    width: 17%;
+    background-color: #e44d3a;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.message-send-area form > ul {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.message-send-area form > ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.message-send-area form > ul li a {
+    color: #b2b2b2;
+    font-size: 18px;
+}
+
+/* ==========================================================================
+   Media Queries for Chat Page
+   ========================================================================== */
+   
+/* Desktop */
+@media (max-width: 1024px){
+}
+
+@media (max-width: 992px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}	
+}
+
+/* Tablets */
+@media (max-width: 800px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}
+}
+
+@media (max-width: 768px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}	
+}
+
+/* Mobile phones */
+@media (max-width: 600px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}	
+}
+
+@media (max-width: 548px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}	
+}
+
+@media (max-width: 480px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}
+}
+
+@media (max-width: 320px){
+	.messages-box .col-lg-4{
+	  padding: 0px 40px !important;	
+	}	
+	.messages-box .col-lg-8{
+	  padding: 0px 40px !important;	
+	}	
+}
